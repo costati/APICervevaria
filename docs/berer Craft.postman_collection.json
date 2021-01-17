@@ -1,0 +1,165 @@
+{
+	"info": {
+		"_postman_id": "b06fb026-7cd4-44ff-b115-91fe3f573615",
+		"name": "berer Craft",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "findAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/beerhouse/api/beer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"beerhouse",
+						"api",
+						"beer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Nova Breja\",\r\n    \"ingredients\":\"Cevada\",\r\n    \"alcoholContent\":\"Sim\",\r\n    \"price\":5.60,\r\n    \"category\":\"Puro Malte\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/beerhouse/api/beer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"beerhouse",
+						"api",
+						"beer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/beerhouse/api/beer/19",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"beerhouse",
+						"api",
+						"beer",
+						"19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdatePartial",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"ingredients\": \"Alcool\",\r\n    \"alcoholContent\": \"Sim\",\r\n    \"price\": 5.7,\r\n    \"category\": \"Malte\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/beerhouse/api/beer/19",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"beerhouse",
+						"api",
+						"beer",
+						"19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 19,\r\n    \"name\": \"Nova Breja\",\r\n    \"ingredients\": \"Cevada\",\r\n    \"alcoholContent\": \"Não\",\r\n    \"price\": 5.6,\r\n    \"category\": \"Puro Malte\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/beerhouse/api/beer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"beerhouse",
+						"api",
+						"beer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/beerhouse/api/beer/19",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"beerhouse",
+						"api",
+						"beer",
+						"19"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
